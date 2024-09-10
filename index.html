@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>連打測定ツール</title>
+</head>
+<body>
+  <p>ここに連打してね！</p>
+  <p id="count">0</p>
+
+  <script>
+    let count = 0;
+    const countElement = document.getElementById('count');
+
+    document.addEventListener('keydown', () => {
+      count++;
+      countElement.textContent = count;
+    });
+  </script>
+</body>
+</html>
